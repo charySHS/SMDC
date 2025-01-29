@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background: #0A1927;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    object-fit: cover;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.navbar__logo{
+    flex: 1;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.navbar__notch{
+    background: #f7f7f7;
+    padding: 8px 20px 8px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+.navbar__notch p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar__notch p::before{
+    position: absolute;
+    content: "";
+    background: #000;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+}
+
+.navbar__notch a{
+    font-size: 0.9rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar__notch a::before{
+    position: absolute;
+    content: "New";
+    padding: 2px 6px;
+    background: #d85f44;
+    color: #fff;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    top: -18px;
+    right: -12px;
+}
+
+.navbar__menu{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.navbar__menu-link{
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: #f7f7f7;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.navbar__menu-link:hover{
+    background: #edefde;
+    border-color: transparent;
+}
